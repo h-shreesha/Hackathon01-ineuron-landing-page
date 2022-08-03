@@ -1,0 +1,16 @@
+*{
+    padding: 0;
+    margin: 0;
+    outline: 0;
+}
+
+.section1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+
+.section1 img{
+    width: 100px;
+}
