@@ -1,16 +1,586 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
 *{
     padding: 0;
     margin: 0;
     outline: 0;
 }
 
+:root{
+    --bg-color: #f0f0f0;
+    --dark-blue: #233c7b;
+    --yellow :#f1ff29;
+    --grey: #7c7c7c;
+    --black-light: #333333;
+}
+
+body{
+    font-family: 'Roboto', 'sans-serif';
+    background-color: var(--bg-color);
+}
+
 .section1{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 5rem;
+    padding-top: 1rem;
+    gap: 2rem;
+    position: relative;
 }
 
 .section1 img{
-    width: 100px;
+    width: 150px;
+    padding-left: 4rem;
+    
+    position: relative;
+    left: -2rem;
 }
+.section1-search-bar{
+    position: relative;
+}
+
+.section1-search-bar i{
+    position: absolute;
+    top: 13px;
+    left: 6px;
+    color: var(--dark-blue);
+}
+
+.section1-search-bar input{
+    padding: 0.8rem 15rem;
+    border: 1px solid var(--dark-blue);
+    border-radius: 10px;
+}
+
+.section1-search-bar ::placeholder{
+    position: absolute;
+    left: 2.5rem;
+    color: var(--dark-blue);
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.signup-btn button{
+    padding: 0.5rem 1.8rem;
+    border: none;
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: var(--dark-blue);
+    cursor: pointer;
+}
+
+.signin-btn button{
+    padding: 0.5rem 1.8rem;
+    background-color: var(--dark-blue);
+    color: var(--bg-color);
+    font-weight: 700;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.navbar{
+    margin-top: 3rem;
+}
+
+.list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    gap: 3rem;
+}
+
+.list-items{
+    color: var(--dark-blue);
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+.section2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 2rem;
+    background-color: var(--dark-blue);
+    color: var(--bg-color);
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+}
+
+.section2-left h2{
+    font-size: 1rem;
+    font-weight: 300;
+    position: relative;
+    top: -1rem;
+    left: -3rem;
+}
+
+.section2-left .underline{
+    height: 2px;
+    width: 100px;
+    background-color: var(--yellow);
+    position: relative;
+    left: -3rem;
+    top: -0.5rem;
+}
+
+.section2-left h1{
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.section2-left input{
+    padding: 0.8rem 8rem;
+    border: 1px solid var(--dark-blue);
+    border-radius: 10px;
+}
+
+.section2-left ::placeholder{
+    position: absolute;
+    left: 1rem;
+    color: var(--dark-blue);
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.section21{
+    margin-top: 3rem;
+    margin-left: 15rem;
+    position: relative;
+}
+
+.section21-container{
+    color: var(--dark-blue);
+    font-size: 2rem;
+    position: absolute;
+    top: 12rem;
+}
+
+.section21-img1, .section21-img3{
+    position: relative;
+    left: 25rem;
+}
+
+.section21-img1 h2, .section21-img2 h2, .section21-img3 h2{
+    font-size: 2rem;
+    color: var(--dark-blue);
+}
+
+.section21-img1 h3,.section21-img2 h3,.section21-img3 h3{
+    color:var(--grey) ;
+    font-size: 2rem;
+}
+
+.section21-img2{
+    position: relative;
+    left: 38rem;
+}
+
+.section3{
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.section3 h1{
+    font-size: 3rem;
+    color: var(--dark-blue);
+    margin-bottom: 2rem;
+}
+
+.section3-btns button{
+    padding: 0.5rem 2.5rem;
+    margin-right: 1rem;
+    background-color: var(--bg-color);
+    color: var(--grey);
+    border: 2px solid var(--grey);
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.section3-btns .sec3-btn1{
+    background-color: var(--dark-blue);
+    color: var(--bg-color);
+    border: none;
+}
+
+.section3 h2{
+    color: var(--dark-blue);
+    font-size: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.section3 h3{
+    color: var(--grey);
+}
+
+.section4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-left: 3rem;
+    margin-top: 1rem;
+}
+
+.section4-card{
+    padding: 1rem 1.5rem;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 15px 0px 18px var(--grey);
+}
+
+.section4-card img{
+    width: 300px;
+    margin-bottom: 1rem;
+    align-items: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section4-card h1{
+    color: var(--dark-blue);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.section4-card h3{
+    color: var(--black-light);
+    margin-bottom: 1rem;
+}
+
+.section4-card p{
+    font-size: 1.4rem;
+    color: var(--black-light);
+}
+
+.section4-card button{
+    float: right;
+    position: relative;
+    top: -1.5rem;
+    padding: 0.5rem;
+    background-color: #4778f7;
+    color: var(--bg-color);
+    border: none;
+    border-radius: 5px;
+}
+
+.section5{
+    position: relative;
+    margin-top: 15rem;
+    margin-left: 3rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.section5-left h1{
+    font-size: 2rem;
+    color: var(--dark-blue);
+    position: relative;
+    top: -7rem;
+    left: 16rem;
+}
+
+.section5-right{
+    position: relative;
+}
+
+.section5-right h1{
+    font-size: 2rem;
+    color: var(--dark-blue);
+    position: relative;
+    top: 5rem;
+    left: 30rem;
+}
+
+.section5-right img{
+    width: 150px;
+    cursor: pointer;
+}
+
+.section5-right .sec5-1{
+    position: relative;
+    top: -1.5rem;
+    left: 33rem;
+}
+
+.section5-right .sec5-2{
+    position: relative;
+    top: 0rem;
+    left: 33rem;
+}
+
+.section5-right .sec5-3{
+    position: relative;
+    top: 5rem;
+    left: 26rem;
+}
+
+.section5-right .sec5-4{
+    position: relative;
+    top:8rem ;
+    left: 2rem;
+}
+
+.section5-right .sec5-5{
+    position: relative;
+    top: 5rem;
+    left: -19rem;
+}
+
+.section5-right .sec5-6{
+    position: relative;
+    top: 1rem;
+    left: -29rem;
+}
+
+.section5-right .sec5-7{
+    position: relative;
+    top: -4.5rem;
+    left: -19rem;
+}
+
+.section5-right .sec5-8{
+    position: relative;
+    top: 0rem;
+    left: 55rem;
+}
+
+.section5-right .sec5-9{
+    position: relative;
+    top: 9rem;
+    left: 30rem;
+}
+
+.section5-right .sec5-10{
+    position: relative;
+    top: 1rem;
+    left: -10rem;
+}
+
+.section5-right .sec5-11{
+    position: relative;
+    top: -7rem;
+    left: -6rem;
+}
+
+.section5-right .sec5-12{
+    position: relative;
+    top: 9rem;
+    left: -14rem;
+}
+
+.section7{
+    margin-top: 13rem;
+    position: relative;
+    margin-left: 3rem;
+}
+
+.section7 h1{
+    position: relative;
+    left: 50rem;
+    top: 20rem;
+    font-size: 3rem;
+    color: var(--dark-blue);
+}
+
+.section7-cards{
+    padding: 1rem;
+}
+
+.section7 img{
+    width: 200px;
+}
+
+.sec7-card1 {
+    position: relative;
+    top: -5rem;
+    left: 40rem;
+}
+
+.sec7-card2{
+    position: relative;
+    top: -10rem;
+    left: 20rem;
+}
+
+.sec7-card3{
+    position: relative;
+    top: -10rem;
+    left: 20rem;
+}
+
+.sec7-card4{
+    position: relative;
+    top: -15rem;
+    left: 40rem;
+}
+
+.section7-cards h3{
+    color: var(--black-light);
+    margin-bottom: 1rem;
+}
+
+.section7-cards p{
+    color: var(--grey);
+}
+
+.section8{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.section8-cards{
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 15px 0px 18px var(--grey);
+    cursor: pointer;
+}
+
+.section8-cards img{
+    width: 150px;
+    border-radius: 50%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sec8-card1{
+    position: relative;
+    top: 10rem;
+    left: 22rem;
+}
+
+.sec8-card2{
+    position: relative;
+    top: -31rem;
+    left: 22rem;
+}
+
+.sec8-card3{
+    position: relative;
+    top: -41rem;
+    left: 39rem;
+}
+
+.sec8-card4{
+    position: relative;
+    top: -36rem;
+    left:39rem ;
+}
+
+.sec8-card5{
+    position: absolute;
+    top: 32rem;
+    padding: 2rem;
+    left: 22rem;
+} 
+
+.sec8-card6{
+    position: absolute;
+    top: 22rem;
+    left: 5rem;
+    padding: 2rem;
+}
+
+.sec8-card7{
+    position: absolute;
+    top: -1rem;
+    left: 5rem;
+}
+
+.section8-cards h2{
+    color: var(--black-light);
+    margin-bottom: 1rem;
+}
+
+.section8-cards p{
+    color: var(--grey);
+    margin-bottom: 1rem;
+}
+
+.section8 h1{
+    position: relative;
+    top: -21rem;
+    left: 44rem;
+    font-size: 2.5rem;
+    color: var(--dark-blue);
+}
+
+.footer{
+    position: relative;
+    top: -20rem;
+    display: flex;
+    justify-content: space-between;
+    color: var(--dark-blue);
+    margin-left: 2rem;
+}
+
+.footer-left1{
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.footer-left1 img{
+    width: 150px;
+}
+
+.footer-left2{
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.footer-left3{
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.footer-mid h2{
+    text-align: center;
+}
+
+.footer-mid1{
+    display: flex;
+    gap: 2rem;
+    line-height: 2rem;
+    margin-top: 1rem;
+}
+
+.foo{
+    list-style-type: none;
+}
+
+.footer-right{
+    margin-right: 3rem;
+}
+
+.footer-right h2{
+    margin-bottom: 1rem;
+}
+
+.footer-right ul li{
+    line-height: 2rem;
+}
+
+
